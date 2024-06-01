@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تنزيل فيديوهات اليوتيوب</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>تنزيل فيديوهات اليوتيوب</h1>
+
+  <form id="download-form">
+    <label for="video-url">رابط الفيديو:</label>
+    <input type="text" id="video-url" name="video-url" placeholder="أدخل رابط الفيديو">
+
+    <label for="video-quality">جودة الفيديو:</label>
+    <select id="video-quality" name="video-quality">
+      <option value="360p">360p</option>
+      <option value="480p">480p</option>
+      <option value="720p">720p</option>
+      <option value="1080p">1080p</option>
+    </select>
+
+    <button type="submit">تنزيل</button>
+  </form>
+
+  <div id="progress"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

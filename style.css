@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+}
+
+#download-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#download-form label {
+  margin-bottom: 5px;
+}
+
+#download-form input,
+#download-form select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#download-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#progress {
+  width: 100%;
+  height: 20px;
+  background-color: #ccc;
+  border: 1px solid #007bff;
+  margin-top: 20px;
+}
+
+#progress .progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #007bff;
+}
