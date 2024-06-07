@@ -1,7 +1,6 @@
 const form = document.getElementById('download-form');
 const videoUrlInput = document.getElementById('video-url');
 const videoQualitySelect = document.getElementById('video-quality');
-const progressBar = document.getElementById('progress');
 const progressBarBar = document.querySelector('.progress-bar');
 
 form.addEventListener('submit', (event) => {
@@ -12,27 +11,20 @@ form.addEventListener('submit', (event) => {
 
   // ... (تنفيذ عملية التنزيل) ...
 
-  // تحديث شريط التقدم
-  progressBarBar.style.width = progress + '%';
+  // Assuming `progress` is a variable that updates during the download process
+  // Here is an example of updating the progress bar
+  // progressBarBar.style.width = progress + '%';
 });
 
-// ... (تنفيذ عملية التنزيل) ...
-
-window.onload = function() {
+// Ensure the DOM is fully loaded before manipulating elements
+document.addEventListener('DOMContentLoaded', () => {
   const myElement = document.getElementById('myElement');
   if (myElement) {
-    myElement.style.color = 'red'; // Modify styles here
+    myElement.style.color = 'red';
   }
-};
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Your code here
 });
 
-
-
-
+// Example of an asynchronous function to modify an element's style
 async function modifyElementStyle() {
   const myElement = await document.getElementById('myElement');
   if (myElement) {
